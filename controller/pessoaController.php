@@ -1,12 +1,13 @@
 <?php
 
-require_once 'model/pessoa.php';
+require_once '../model/pessoa.php';
 
 class PessoaController {
     private $pessoa;
     
     public function __construct() {
         $this->pessoa = new Pessoa();
+        $this->inserir();
     }
     
     public function inserir() {
@@ -18,8 +19,10 @@ class PessoaController {
         $this->pessoa->setEstado($_POST['estado']);
         $this->pessoa->setTelefone($_POST['telefone']);
         $this->pessoa->setCelular($_POST['celular']);
+
+        $this->pessoa->inserir();
+
     }
 }
-
-
+new PessoaController();
 ?>
