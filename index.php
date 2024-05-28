@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h2>Cadastro</h2>
-        <form method="POST" action="controller/pessoaController.php">
+        <form method="POST" action="controller/pessoaController.php?acao=inserir">
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o seu nome" aria-label="Username">
