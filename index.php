@@ -10,6 +10,7 @@
 <body>
     <div class="container">
         <h2>Cadastro</h2>
+        <!-- O action envia os dados para a pessoaController-->
         <form method="POST" action="controller/pessoaController.php?acao=inserir">
             <div class="form-group">
                 <label for="nome">Nome:</label>

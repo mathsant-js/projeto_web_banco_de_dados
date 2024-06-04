@@ -1,18 +1,26 @@
 <?php
 
+// O require_once serve para conectarmos os arquivos do projeto entre si, no caso está sendo conectada com pessoa.php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/projeto_web_banco_de_dados/model/pessoa.php';
 
+// Classe que irá controlar os dados da classe pessoa que está no diretório model
 class PessoaController {
+    // A varíavel pessoa irá servir depois para setarmos os dados nela
     private $pessoa;
     
+    // Método construtor
     public function __construct() {
+        // pessoa se torna objeto recebe a classe Pessoa, que tem a estrutura de dados para receber o que o usuário digitar
         $this->pessoa = new Pessoa();
+        // if para verificar a url do site para ver se é possível realizar a ação de inserir os dados
         if ($_GET['acao'] == 'inserir') {
+            // Irá executar a função inserir
             $this->inserir();
         }
     }
-    
+    // Função para setarmos os valores do formulário que o usuário irá digitar
     public function inserir() {
+        // Setando os dados recebidos do usuário
         $this->pessoa->setNome($_POST['nome']);
         $this->pessoa->setEndereco($_POST['endereco']);
         $this->pessoa->setBairro($_POST['bairro']);
@@ -22,13 +30,17 @@ class PessoaController {
         $this->pessoa->setTelefone($_POST['telefone']);
         $this->pessoa->setCelular($_POST['celular']);
 
+        // pessoa recebendo o método inserir que possui os dados
         $this->pessoa->inserir();
 
     }
 
+    // Esta função serve para mostrar os dados de pessoa
     public function listar() {
         return $this->pessoa->listar();
     }
 }
+
+// Serve para executar a própria classe PessoaController
 new PessoaController();
 ?>

@@ -21,11 +21,17 @@
             </thead>
             <tbody>
                 <?php
+                    // Objeto da classe PessoaController
                     $pessoaController = new PessoaController();
+                    // pessoas recebe a função de listar os dados
                     $pessoas = $pessoaController->listar();
+                        /* pessoa recebe o que está em pessoas, mostra todos os dados registrados 
+                         * no banco de dados
+                        */
                         foreach ($pessoas as $pessoa) {
                             ?>
                             <tr>
+                                <!-- Mostra os dados cadastrados pelo usuário-->
                                 <th><?php echo $pessoa['nome']; ?></th>
                                 <th><?php echo $pessoa['telefone'];?></th>
                                 <th><?php echo $pessoa['celular'];?></th>
