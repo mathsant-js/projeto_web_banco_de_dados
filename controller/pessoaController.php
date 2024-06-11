@@ -16,6 +16,8 @@ class PessoaController {
         if ($_GET['acao'] == 'inserir') {
             // Irá executar a função inserir
             $this->inserir();
+        } else if ($_GET['acao'] == "atualizar") {
+                $this->atualizar($_GET['id']);
         }
     }
     // Função para setarmos os valores do formulário que o usuário irá digitar
@@ -44,8 +46,17 @@ class PessoaController {
         return $this->pessoa->buscarPorId($id);
     }
 
-    public function atualizar() {
+    public function atualizar($id) {
+        $this->pessoa->setNome($_POST['nome']);
+        $this->pessoa->setEndereco($_POST['endereco']);
+        $this->pessoa->setBairro($_POST['bairro']);
+        $this->pessoa->setCep($_POST['cep']);
+        $this->pessoa->setCidade($_POST['cidade']);
+        $this->pessoa->setEstado($_POST['estado']);
+        $this->pessoa->setTelefone($_POST['telefone']);
+        $this->pessoa->setCelular($_POST['celular']);
 
+        $this->pessoa->atualizar($id);
     }
 }
 

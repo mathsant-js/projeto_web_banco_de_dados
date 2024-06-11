@@ -16,7 +16,7 @@
             $pessoaControler = new PessoaController();
             $pessoa = $pessoaControler->buscarPorId($_GET['id']);
          ?>
-        <form method="POST" action="controller/pessoaController.php?acao=editar">
+        <form method="POST" action="controller/pessoaController.php?acao=editar&id=<?php echo $pessoa['id'] ?>">
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" id="nome" name="nome" value="<?php echo $pessoa['nome']; ?>" aria-label="Username">

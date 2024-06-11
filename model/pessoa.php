@@ -158,8 +158,11 @@ class Pessoa{
         return $result->fetch_assoc();
     }
 
-    public function atualizar() {
-        
+    public function atualizar($id) {
+        $sql = "UPDATE pessoa SET nome = ?, endereco = ?, bairro = ?, cep = ?, cidade = ?, estado = ?, telefone = ?, celular = ? WHERE id = ?";
+        $stmt = $this->conexao->getConexao()->prepare($sql);
+        $stmt->bind_param('ssssssss', $this->nome, $this->endereco, $this->bairro, $this->cep, $this->cidade, $this->estado, $this->telefone, $this->celular, $id);
+        return $stmt->execute();
     }
 }
 
