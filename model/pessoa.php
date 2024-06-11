@@ -145,6 +145,22 @@ class Pessoa{
         // Irá retornar a array pessoas
         return $pessoas;
     }
+
+    public function buscarPorId($id) {
+        // Chama a tabela com os dados
+        $sql = "SELECT * FROM pessoa WHERE id = ?";
+        // Aqui preparará a conexão com o banco de dados para executar o comando acima
+        $stmt = $this->conexao->getConexao()->prepare($sql);
+        $stmt->bind_param('i', $id);
+        // Executá o comando acima
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result->fetch_assoc();
+    }
+
+    public function atualizar() {
+        
+    }
 }
 
 ?>

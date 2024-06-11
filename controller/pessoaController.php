@@ -39,6 +39,14 @@ class PessoaController {
     public function listar() {
         return $this->pessoa->listar();
     }
+
+    public function buscarPorId($id) {
+        return $this->pessoa->buscarPorId($id);
+    }
+
+    public function atualizar() {
+
+    }
 }
 
 // Serve para executar a própria classe PessoaController

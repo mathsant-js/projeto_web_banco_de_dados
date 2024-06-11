@@ -35,7 +35,9 @@
                                 <th><?php echo $pessoa['nome']; ?></th>
                                 <th><?php echo $pessoa['telefone'];?></th>
                                 <th><?php echo $pessoa['celular'];?></th>
-                                <th>Ações</th>
+                                <th>
+                                    <a href="editar.php?id=<?php echo $pessoa['id']; ?>">Editar</a>
+                                </th>
                             </tr>
                     <?php } ?>
             </tbody>
