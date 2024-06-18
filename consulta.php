@@ -36,6 +36,7 @@
                                 <th><?php echo $pessoa['telefone'];?></th>
                                 <th><?php echo $pessoa['celular'];?></th>
                                 <th>
+                                    <!--Coloca a url de editar e puxa a id junto-->
                                     <a href="editar.php?id=<?php echo $pessoa['id']; ?>">Editar</a>
                                 </th>
                             </tr>

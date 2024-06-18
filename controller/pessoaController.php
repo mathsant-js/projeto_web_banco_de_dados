@@ -42,10 +42,12 @@ class PessoaController {
         return $this->pessoa->listar();
     }
 
+    // Busca a id do usuário
     public function buscarPorId($id) {
         return $this->pessoa->buscarPorId($id);
     }
 
+    // Função para setar as atualizações de informação
     public function atualizar($id) {
         $this->pessoa->setNome($_POST['nome']);
         $this->pessoa->setEndereco($_POST['endereco']);

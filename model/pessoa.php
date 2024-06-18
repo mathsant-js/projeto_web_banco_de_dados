@@ -119,7 +119,7 @@ class Pessoa{
         $sql = "INSERT INTO pessoa (`nome`, `endereco`, `bairro`, `cep`, `cidade`, `estado`, `telefone`, `celular`) VALUES (?,?,?,?,?,?,?,?)";
         // Aqui preparará a conexão com o banco de dados para executar o comando acima
         $stmt = $this->conexao->getConexao()->prepare($sql);
-        // Aqui será prepara os tipos de dados que o banco irá receber
+        // Aqui será preparado os tipos de dados que o banco irá receber
         $stmt->bind_param('ssssssss', $this->nome, $this->endereco, $this->bairro, $this->cep, $this->cidade, $this->estado, $this->telefone, $this->celular);
         // Serve para executar a linha acima
         return $stmt->execute();
@@ -158,10 +158,15 @@ class Pessoa{
         return $result->fetch_assoc();
     }
 
+    // Função para atualizar as informações do cadastro
     public function atualizar($id) {
+        // Instrução SQL para atualizar as informações
         $sql = "UPDATE pessoa SET nome = ?, endereco = ?, bairro = ?, cep = ?, cidade = ?, estado = ?, telefone = ?, celular = ? WHERE id = ?";
+        // Aqui preparará a conexão com o banco de dados para executar o comando acima
         $stmt = $this->conexao->getConexao()->prepare($sql);
+        // Aqui será preparado os tipos de dados que o banco irá receber
         $stmt->bind_param('sssssssss', $this->nome, $this->endereco, $this->bairro, $this->cep, $this->cidade, $this->estado, $this->telefone, $this->celular, $id);
+        // Executá o comando acima
         return $stmt->execute();
     }
 }
