@@ -18,6 +18,8 @@ class PessoaController {
             $this->inserir();
         } else if ($_GET['acao'] == "atualizar") {
                 $this->atualizar($_GET['id']);
+        } else if($_GET['acao'] == 'excluir') {
+            $this->excluir($_GET['id']);
         }
     }
     // Função para setarmos os valores do formulário que o usuário irá digitar
@@ -60,6 +62,11 @@ class PessoaController {
 
         $this->pessoa->atualizar($id);
     }
+
+    public function excluir($id) {
+        $this->pessoa->excluir($id);
+    }
+    
 }
 
 // Serve para executar a própria classe PessoaController

@@ -169,6 +169,13 @@ class Pessoa{
         // Executá o comando acima
         return $stmt->execute();
     }
+
+    public function excluir($id) {
+        $sql = "DELETE FROM pessoa WHERE id = ?";
+        $stmt = $this->conexao->getConexao()->prepare($sql);
+        $stmt->bind_param('i', $id);
+        return $stmt->execute();
+    }
 }
 
 ?>

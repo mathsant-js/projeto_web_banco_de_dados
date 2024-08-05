@@ -38,6 +38,7 @@
                                 <th>
                                     <!--Coloca a url de editar e puxa a id junto-->
                                     <a href="editar.php?id=<?php echo $pessoa['id']; ?>">Editar</a>
+                                    <a href="excluir.php?id=<?php echo $pessoa['id'];?>&acao=">Excluir</a>
                                 </th>
                             </tr>
                     <?php } ?>
