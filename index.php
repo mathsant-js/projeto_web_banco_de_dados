@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Tela de Cadastro</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-dark">
@@ -19,8 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active text-light" aria-current="page" href="#">Cadastro</a>
-                    <a class="nav-link text-light" href="consulta.php">Consultar</a>
-                    <a class="nav-link text-light" href="editar.php">Editar</a>
+                    <a class="nav-link text-light" href="consulta.php?acao=consultar">Consultar</a>
                 </div>
             </div>
         </div>
@@ -29,44 +30,44 @@
         <h2 class="text-light mb-5">Cadastro</h2>
         <!-- O action envia os dados para a pessoaController-->
         <form method="POST" action="controller/pessoaController.php?acao=inserir">
-            <div class="form-group text-light mb-3">
-                <label for="nome" class="mb-2">Nome:</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o seu nome" aria-label="Username">
+                <label for="nome" class="mb-2">Nome</label>
             </div>
             <br>
-            <div class="form-group text-light mb-3">
-                <label for="endereco" class="mb-2">Endereço:</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite o seu endereço" aria-label="Username">
+                <label for="endereco" class="mb-2">Endereço</label>
             </div>
             <br>
-            <div class="form-group text-light mb-3">
-                <label for="bairro" class="mb-2">Bairro:</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Digite o seu bairro" aria-label="Username">
+                <label for="bairro" class="mb-2">Bairro</label>
             </div>
             <br>
-            <div class="form-group text-light mb-3">
-                <label for="cep" class="mb-2">CEP:</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o seu CEP" aria-label="Username">
+                <label for="cep" class="mb-2">CEP</label>
             </div>
             <br>
-            <div class="form-group text-light mb-3">
-                <label for="cidade" class="mb-2">Cidade:</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite a sua cidade" aria-label="Username">
+                <label for="cidade" class="mb-2">Cidade</label>
             </div>
             <br>
-            <div class="form-group text-light mb-3">
-                <label for="estado" class="mb-2">Estado:</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="estado" name="estado" placeholder="Digite o seu estado" aria-label="Username">
+                <label for="estado" class="mb-2">Estado</label>
             </div>
             <br>
-            <div class="form-group text-light mb-3">
-                <label for="tel" class="mb-2">Telefone:</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Digite o seu telefone" aria-label="Username">
+                <label for="tel" class="mb-2">Telefone</label>
             </div>
             <br>
-            <div class="form-group text-light mb-3">
-                <label for="cel" class="mb-2">Celular:</label>
+            <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="celular" name="celular" placeholder="Digite o seu celular" aria-label="Username">
+                <label for="cel" class="mb-2">Celular</label>
             </div>
             <br>
             <input type="submit" class="btn btn-outline-light my-2 me-3" value="Cadastrar">
