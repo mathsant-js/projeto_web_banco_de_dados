@@ -19,8 +19,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active text-light" aria-current="page" href="#">Cadastro</a>
-                    <a class="nav-link text-light" href="#">Consultar</a>
-                    <a class="nav-link text-light" href="#">Editar</a>
+                    <a class="nav-link text-light" href="consulta.php">Consultar</a>
+                    <a class="nav-link text-light" href="editar.php">Editar</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,6 @@
             </div>
             <br>
             <input type="submit" class="btn btn-outline-light my-2 me-3" value="Cadastrar">
-            <input type="submit" class="btn btn-outline-light my-2" value="Limpar Campos">
         </form>
     </div>
 </body>
