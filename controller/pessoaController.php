@@ -17,7 +17,7 @@ class PessoaController {
             // Irá executar a função inserir
             $this->inserir();
         } else if ($_GET['acao'] == "atualizar") {
-                $this->atualizar($_GET['id']);
+            $this->atualizar($_GET['id']);
         } else if($_GET['acao'] == 'excluir') {
             $this->excluir($_GET['id']);
         }

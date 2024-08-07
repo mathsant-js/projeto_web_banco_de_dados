@@ -42,8 +42,8 @@
                                 <th><?php echo $pessoa['celular'];?></th>
                                 <th>
                                     <!--Coloca a url de editar e puxa a id junto-->
-                                    <a class="btn btn-outline-primary" href="editar.php?id=<?php echo $pessoa['id']; ?>">Editar</a>
-                                    <a class="btn btn-outline-danger" href="excluir.php?id=<?php echo $pessoa['id'];?>&acao=excluir">Excluir</a>
+                                    <a class="btn btn-outline-primary" href="editar.php?id=<?php echo $pessoa['id'];?>&acao=editar">Editar</a>
+                                    <a class="btn btn-outline-danger" href="excluir.php?id=<?php echo $pessoa['id'];?>&acao=semAcao">Excluir</a>
                                 </th>
                             </tr>
                     <?php } ?>

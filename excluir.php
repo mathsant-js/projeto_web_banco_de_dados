@@ -1,3 +1,5 @@
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/projeto_web_banco_de_dados/controller/pessoaController.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,49 +26,49 @@
         <form method="POST" action="controller/pessoaController.php?acao=excluir&id=<?php echo $pessoa['id']; ?>">
             <div class="form-group">
                 <label for="nome">Nome:</label>
-                <input type="text" disabled class="form-control" id="nome" name="nome" value="<?php echo $pessoa['nome']; ?>">
+                <input type="text" class="form-control" id="nome" name="nome" value="<?php echo $pessoa['nome']; ?>" disabled>
             </div>
 
 
             <div class="form-group">
                 <label for="endereco">Endereço:</label>
-                <input type="text" disabled class="form-control" id="endereco" name="endereco" value="<?php echo $pessoa['endereco']; ?>">
+                <input type="text" class="form-control" id="endereco" name="endereco" value="<?php echo $pessoa['endereco']; ?>" disabled>
             </div>
 
 
             <div class="form-group">
                 <label for="bairro">Bairro:</label>
-                <input type="text" disabled class="form-control" id="bairro" name="bairro" value="<?php echo $pessoa['bairro']; ?>">
+                <input type="text" class="form-control" id="bairro" name="bairro" value="<?php echo $pessoa['bairro']; ?>" disabled>
             </div>
 
 
             <div class="form-group">
                 <label for="cep">CEP:</label>
-                <input type="text" disabled class="form-control" id="cep" name="cep" value="<?php echo $pessoa['cep']; ?>">
+                <input type="text" class="form-control" id="cep" name="cep" value="<?php echo $pessoa['cep']; ?>" disabled>
             </div>
 
 
             <div class="form-group">
                 <label for="cidade">Cidade:</label>
-                <input type="text" disabled class="form-control" id="cidade" name="cidade" value="<?php echo $pessoa['cidade']; ?>">
+                <input type="text" class="form-control" id="cidade" name="cidade" value="<?php echo $pessoa['cidade']; ?>" disabled>
             </div>
 
 
             <div class="form-group">
                 <label for="estado">Estado:</label>
-                <input type="text" disabled class="form-control" id="estado" name="estado" value="<?php echo $pessoa['estado']; ?>">
+                <input type="text" class="form-control" id="estado" name="estado" value="<?php echo $pessoa['estado']; ?>" disabled>
             </div>
 
 
             <div class="form-group">
                 <label for="telefone">Telefone:</label>
-                <input type="text" disabled class="form-control" id="telefone" name="telefone" value="<?php echo $pessoa['telefone']; ?>">
+                <input type="text" class="form-control" id="telefone" name="telefone" value="<?php echo $pessoa['telefone']; ?>" disabled>
             </div>
 
 
             <div class="form-group">
                 <label for="celular">Celular:</label>
-                <input type="text" disabled class="form-control" id="celular" name="celular" value="<?php echo $pessoa['celular']; ?>">
+                <input type="text" class="form-control" id="celular" name="celular" value="<?php echo $pessoa['celular']; ?>" disabled>
             </div>
             <button type="submit" class="btn btn-primary">Excluir</button>
         </form>
