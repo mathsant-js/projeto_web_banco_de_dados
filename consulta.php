@@ -13,20 +13,6 @@
 </head>
 
 <body class="bg-dark">
-    <nav class="navbar navbar-expand-lg bg-black mb-5">
-        <div class="container">
-            <a class="navbar-brand text-light" href="#">Form MJS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active text-light" href="index.php">Cadastro</a>
-                    <a class="nav-link text-light" aria-current="page" href="consulta.php?acao=consultar">Consultar</a>
-                </div>
-            </div>
-        </div>
-    </nav>
     <div class="container">
         <h2 class="text-light mb-5 mt-2">Consulta</h2>
         <table class="table">
@@ -56,13 +42,14 @@
                                 <th><?php echo $pessoa['celular'];?></th>
                                 <th>
                                     <!--Coloca a url de editar e puxa a id junto-->
-                                    <a href="editar.php?id=<?php echo $pessoa['id']; ?>">Editar</a>
-                                    <a href="excluir.php?id=<?php echo $pessoa['id'];?>&acao=excluir">Excluir</a>
+                                    <a class="btn btn-outline-primary" href="editar.php?id=<?php echo $pessoa['id']; ?>">Editar</a>
+                                    <a class="btn btn-outline-danger" href="excluir.php?id=<?php echo $pessoa['id'];?>&acao=excluir">Excluir</a>
                                 </th>
                             </tr>
                     <?php } ?>
             </tbody>
         </table>
+        <a href="index.php" class="btn btn-outline-light my-2">Página de Cadastro</a>
     </div>
 </body>
 </html>
