@@ -16,13 +16,13 @@
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg bg-black mb-5">
         <div class="container">
-            <a class="navbar-brand text-light" href="#">Form MJS</a>
+            <a class="navbar-brand text-light" href="index.php">Form MJS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Cadastro</a>
+                    <a class="nav-link active text-light" href="index.php">Cadastro</a>
                     <a class="nav-link text-light" href="consulta.php?acao=consultar">Consultar</a>
                 </div>
             </div>
@@ -77,23 +77,44 @@
                 <input type="text" class="form-control" id="celular" name="celular" placeholder="Digite o seu celular" aria-label="Username" value="<?php echo $pessoa['celular']; ?>" disabled>
                 <label for="cel" class="mb-2">Celular</label>
             </div>
-            <button type="submit" class="btn btn-outline-danger">Excluir</button>
+            <button type="button" class="btn btn-outline-danger me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Excluir</button>
             <a href="consulta.php?acao=semAcao" class="btn btn-outline-primary">Voltar para a página de consulta</a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-uppercase" id="exampleModalLabel">Excluir cadastro</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Você tem certeza que gostaria de excluir o seu cadastro?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-outline-danger">Excluir</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
 
     </div>
 </body>
 <footer class="mt-5">
     <div class="card bg-black">
-        <div class="card-header text-white">
-            Developer
-        </div>
-        <div class="card-body text-white">
-            <h5 class="card-title">Redes Sociais</h5>
-            <li class="card-text">GitHub:
-                <a href="https://github.com/mathsant-js" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">mathsant-js</a>
-            </li>
-            <li>Instagram: <a href="https://www.instagram.com/matheus.jorge.deca.10/" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">matheus.jorge.deca.10</a></li>
+        <div class="container">
+            <div class="card-header text-white">
+                Developer
+            </div>
+            <div class="card-body text-white">
+                <h5 class="card-title pb-3">Redes Sociais</h5>
+                <li class="card-text">GitHub:
+                    <a href="https://github.com/mathsant-js" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">mathsant-js</a>
+                </li>
+                <li>Instagram: <a href="https://www.instagram.com/matheus.jorge.deca.10/" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">matheus.jorge.deca.10</a></li>
+            </div>
         </div>
     </div>
 </footer>
