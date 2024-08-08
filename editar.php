@@ -77,7 +77,8 @@
                 <label for="cel" class="mb-2">Celular</label>
             </div>
 
-            <input type="button" class="btn btn-outline-light" value="Editar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <input type="button" class="btn btn-outline-light me-3" value="Editar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a href="consulta.php?acao=semAcao" class="btn btn-outline-light">Voltar para a página de consulta</a>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
