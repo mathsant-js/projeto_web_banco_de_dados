@@ -70,7 +70,26 @@
                 <label for="cel" class="mb-2">Celular</label>
             </div>
             <br>
-            <input type="submit" class="btn btn-outline-light my-2 me-3" value="Cadastrar">
+            <input type="button" class="btn btn-outline-light my-2 me-3" value="Cadastrar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-uppercase" id="exampleModalLabel">Cadastrar-se</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Você tem certeza que gostaria de cadastrar esses dados?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-outline-light">Sim</button>
+                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Não</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
 </body>
