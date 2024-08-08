@@ -27,7 +27,7 @@
         </div>
     </nav>
     <div class="container">
-        <h2 class="text-light mb-5">Cadastro</h2>
+        <h2 class="text-light mb-5 text-uppercase">Cadastro</h2>
         <!-- O action envia os dados para a pessoaController-->
         <form method="POST" action="controller/pessoaController.php?acao=inserir">
             <div class="form-floating mb-3">
@@ -76,15 +76,17 @@
 </body>
 <footer class="mt-5">
     <div class="card bg-black">
-        <div class="card-header text-white">
-            Developer
-        </div>
-        <div class="card-body text-white">
-            <h5 class="card-title">Redes Sociais</h5>
-            <li class="card-text">GitHub:
-                <a href="https://github.com/mathsant-js" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">mathsant-js</a>
-            </li>
-            <li>Instagram: <a href="https://www.instagram.com/matheus.jorge.deca.10/" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">matheus.jorge.deca.10</a></li>
+        <div class="container">
+            <div class="card-header text-white">
+                Developer
+            </div>
+            <div class="card-body text-white">
+                <h5 class="card-title pb-3">Redes Sociais</h5>
+                <li class="card-text">GitHub:
+                    <a href="https://github.com/mathsant-js" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">mathsant-js</a>
+                </li>
+                <li>Instagram: <a href="https://www.instagram.com/matheus.jorge.deca.10/" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">matheus.jorge.deca.10</a></li>
+            </div>
         </div>
     </div>
 </footer>
