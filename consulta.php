@@ -16,7 +16,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projeto_web_banco_de_dados/controller
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg bg-black mb-5">
         <div class="container">
-            <a class="navbar-brand text-light" href="index.php">Form MJS</a>
+            <a class="navbar-brand text-light" href="index.php">Form MathSant</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
