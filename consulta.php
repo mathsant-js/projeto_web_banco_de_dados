@@ -22,7 +22,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projeto_web_banco_de_dados/controller
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active text-light" href="#">Cadastro</a>
+                    <a class="nav-link active text-light" href="index.php">Cadastro</a>
                     <a class="nav-link text-light" aria-current="page" href="consulta.php?acao=consultar">Consultar</a>
                 </div>
             </div>
