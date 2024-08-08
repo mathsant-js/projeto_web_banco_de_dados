@@ -29,7 +29,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/projeto_web_banco_de_dados/controller
         </div>
     </nav>
     <div class="container">
-        <h2 class="text-light mb-5 mt-2">Consulta</h2>
+        <h2 class="text-light text-uppercase mb-5 mt-2">Consulta</h2>
         <table class="table table-dark">
             <thead>
                 <tr class="text-light">

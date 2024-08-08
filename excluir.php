@@ -29,7 +29,7 @@
         </div>
     </nav>
     <div class="container">
-        <h2 class="text-white">Excluir</h2>
+        <h2 class="text-white text-uppercase">Excluir</h2>
         <?php
         // cria um objeto e atribui a ele uma instância de pessoaController
         $pessoaController = new PessoaController();
@@ -78,7 +78,7 @@
                 <label for="cel" class="mb-2">Celular</label>
             </div>
             <button type="button" class="btn btn-outline-danger me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Excluir</button>
-            <a href="consulta.php?acao=semAcao" class="btn btn-outline-primary">Voltar para a página de consulta</a>
+            <a href="consulta.php?acao=semAcao" class="btn btn-outline-light">Voltar para a página de consulta</a>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -92,8 +92,8 @@
                             Você tem certeza que gostaria de excluir o seu cadastro?
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-outline-danger">Excluir</button>
-                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn btn-outline-danger">Sim</button>
+                            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Não</button>
                         </div>
                     </div>
                 </div>

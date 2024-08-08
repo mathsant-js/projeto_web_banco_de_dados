@@ -91,8 +91,8 @@
                             Você tem certeza que gostaria de editar os dados do seu cadastro?
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-outline-light">Editar</button>
-                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn btn-outline-light">Sim</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Não</button>
                         </div>
                     </div>
                 </div>
