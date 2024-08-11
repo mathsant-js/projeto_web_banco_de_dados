@@ -16,10 +16,13 @@ class PessoaController {
         if ($_GET['acao'] == 'inserir') {
             // Irá executar a função inserir
             $this->inserir();
+            header('Location: ../consulta.php?acao=semAcao');
         } else if ($_GET['acao'] == "atualizar") {
             $this->atualizar($_GET['id']);
+            header('Location: ../consulta.php?acao=semAcao');
         } else if($_GET['acao'] == 'excluir') {
             $this->excluir($_GET['id']);
+            header('Location: ../consulta.php?acao=semAcao');
         }
     }
     // Função para setarmos os valores do formulário que o usuário irá digitar
